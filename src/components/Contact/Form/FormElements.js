@@ -14,17 +14,33 @@ export const Form = styled.form`
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
+  @media screen and (max-width: 1024px) {
+    max-width: 90vw;
+    height: 44vh;
+    right: 0;
+    padding: 0;
+  }
+
   @media screen and (max-width: 768px) {
-    margin-top: 65vh;
+    position: static;
+    /* margin-top: 65vh; */
     margin-bottom: 2.5vh;
     height: 70vh;
     max-width: 70vw;
-    transform: translateX(6%);
+    /* transform: translateY(58%); */
   }
-
-  @media screen and (max-width: 400px) {
+  /* 
+  @media screen and (max-width: 480px) {
+    transform: translateY(20%);
+    right: 0;
     padding: 32px 32px;
   }
+
+  @media screen and (max-width: 375px) {
+    transform: translateY(20%);
+    right: 0;
+    padding: 32px 32px; */
+  /* } */
 `;
 
 export const FormH1 = styled.h1`
@@ -45,7 +61,7 @@ export const RegisterMessage = styled.h3`
 `;
 
 export const FormLabel = styled.label`
-  display: inline-flex;
+  /* display: inline-flex; */
   margin-bottom: 0.5vw;
   font-size: 16px;
   color: #fff;
@@ -57,6 +73,10 @@ export const FormInput = styled.input`
   border: none;
   border-radius: 4px;
   font-size: 24px;
+
+  @media screen and (max-width: 480px) {
+    padding: 2px 2px;
+  }
 `;
 export const AreaAndPhoneDiv = styled.div`
   display: grid;

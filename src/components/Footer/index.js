@@ -33,10 +33,18 @@ const Footer = () => {
               AsaFullStack {new Date().getFullYear()} &copy; All right reserved.
             </WebSiteRights>
             <SocialIcons>
-              <SocialIconLink herf="/" target="_blank" aria-label="Linkedin">
+              <SocialIconLink
+                href="https://il.linkedin.com/in/asafsadika"
+                target="_blank"
+                aria-label="Linkedin"
+              >
                 <FaLinkedin />
               </SocialIconLink>
-              <SocialIconLink herf="/" target="_blank" aria-label="Github">
+              <SocialIconLink
+                href="https://github.com/Asystems0"
+                target="_blank"
+                aria-label="Github"
+              >
                 <FaGithub />
               </SocialIconLink>
             </SocialIcons>

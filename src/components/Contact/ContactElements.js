@@ -102,13 +102,17 @@ export const Container = styled.div`
   background: #c9ccd5;
 
   @media screen and (max-width: 1400px) {
-    height: 88.5vh;
-    /* width: 100vw; */
+    height: 87.5vh;
   }
 
   @media screen and (max-width: 768px) {
     max-width: 100vw;
-    height: 110vh;
+    height: 120vh;
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 100vw;
+    height: 130vh;
   }
 `;
 
@@ -117,6 +121,10 @@ export const FormWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 70%;
+  }
 
   @media screen and (max-width: 400px) {
     height: 80%;
@@ -128,8 +136,9 @@ export const FormAndVideoDiv = styled.div`
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
+    grid-template-areas: "col2 col1";
   }
 `;
 
@@ -147,11 +156,22 @@ export const FormComponents = styled.div`
 export const HeroBg = styled.div`
   position: relative;
   right: 4vw;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
+    position: absolute;
     height: 70vh;
-    max-width: 70vw;
+    max-width: 100vw;
     right: 0;
-    transform: translateX(7.5%);
+    transform: translate(-5%, -5%);
+  }
+  @media screen and (max-width: 768px) {
+    transform: translate(-5%, -5%);
+  }
+  @media screen and (max-width: 480px) {
+    transform: translate(-5%, -10%);
+  }
+
+  @media screen and (max-width: 375px) {
+    transform: translate(-5%, -20%);
   }
 `;
 
@@ -162,9 +182,33 @@ export const VideoBg = styled.video`
   background: #232a34;
   border-radius: 10px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     width: 90vw;
   }
+
+  /* 
+  @media screen and (max-width: 1024px) {
+    width: 90vw;
+    height: 36vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 30vh;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+    height: 28vh;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 90vw;
+    height: 24vh;
+  }
+  @media screen and (max-width: 360px) {
+    width: 90vw;
+    height: 28vh;
+  } */
 `;
 
 export const Footer = styled.footer`

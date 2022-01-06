@@ -15,12 +15,16 @@ export const ProjectsWrapper = styled.div`
   margin-left: auto;
   justify-content: center;
 
+  @media screen and (max-width: 1024px) {
+    height: 120vh;
+  }
+
   @media screen and (max-width: 768px) {
     height: 140vh;
   }
 
   @media screen and (max-width: 480px) {
-    height: 150vh;
+    height: 170vh;
   }
 `;
 
@@ -98,7 +102,7 @@ export const TextWrapper = styled.div`
 
   @media screen and (max-width: 480px) {
     padding-top: 15vh;
-    max-width: 480px;
+    max-width: 300px;
   }
 `;
 export const TopLine = styled.p`
@@ -151,6 +155,7 @@ export const Subtitle = styled.p`
   }
 
   @media screen and (max-width: 480px) {
+    max-width: 300px;
     margin-bottom: 0;
   }
 `;

@@ -6,12 +6,14 @@ export const FooterContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 25vh;
-    /* display: none; */
+  }
+
+  @media screen and (max-width: 540px) {
+    height: 27vh;
   }
 
   @media screen and (max-width: 480px) {
     height: 30vh;
-    /* display: none; */
   }
 `;
 export const FooterWrap = styled.div`
