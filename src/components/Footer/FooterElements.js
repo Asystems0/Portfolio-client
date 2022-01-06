@@ -8,11 +8,11 @@ export const FooterContainer = styled.div`
     height: 25vh;
   }
 
-  @media screen and (max-width: 540px) {
+  /* @media screen and (max-width: 540px) {
     height: 27vh;
-  }
+  } */
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 540px) {
     height: 30vh;
   }
 `;
