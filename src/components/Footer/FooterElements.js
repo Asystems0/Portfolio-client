@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  background: #101522;
+  /* background: #101522; */
+  background: #141e3a;
 
   @media screen and (max-width: 768px) {
     height: 25vh;
