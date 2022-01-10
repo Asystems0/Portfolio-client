@@ -5,7 +5,7 @@ export const Form = styled.form`
   right: 4.5vw;
   background: #30475e;
   max-width: 32vw;
-  height: 78vh;
+  height: 84vh;
   width: 100%;
   z-index: 1;
   display: grid;
@@ -16,31 +16,8 @@ export const Form = styled.form`
 
   @media screen and (max-width: 1024px) {
     max-width: 90vw;
-    height: 44vh;
     right: 0;
-    padding: 0;
   }
-
-  @media screen and (max-width: 768px) {
-    position: static;
-    /* margin-top: 65vh; */
-    margin-bottom: 2.5vh;
-    height: 70vh;
-    max-width: 70vw;
-    /* transform: translateY(58%); */
-  }
-  /* 
-  @media screen and (max-width: 480px) {
-    transform: translateY(20%);
-    right: 0;
-    padding: 32px 32px;
-  }
-
-  @media screen and (max-width: 375px) {
-    transform: translateY(20%);
-    right: 0;
-    padding: 32px 32px; */
-  /* } */
 `;
 
 export const FormH1 = styled.h1`
@@ -61,15 +38,14 @@ export const RegisterMessage = styled.h3`
 `;
 
 export const FormLabel = styled.label`
-  /* display: inline-flex; */
   margin-bottom: 0.5vw;
   font-size: 16px;
   color: #fff;
 `;
 
 export const FormInput = styled.input`
-  padding: 12px 16px;
-  margin-bottom: 4vh;
+  padding: 0.75vh 1vw;
+  margin-bottom: 1.5vh;
   border: none;
   border-radius: 4px;
   font-size: 24px;
@@ -78,30 +54,52 @@ export const FormInput = styled.input`
     padding: 2px 2px;
   }
 `;
+
+export const FormTextArea = styled.textarea`
+  padding: 4vh 0.1vw;
+  text-align: center;
+  margin-bottom: 1.5vh;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+
+  @media screen and (max-width: 480px) {
+    padding: 2px 2px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 5vh;
+  }
+`;
+
 export const AreaAndPhoneDiv = styled.div`
   display: grid;
   grid-template-columns: 7vw 19vw;
 `;
 export const AreaPhoneNumber = styled.select`
   text-align: center;
-  height: 7vh;
+  height: 5vh;
   margin-right: 1vw;
   border-radius: 4px;
-  font-size: 24px;
+  font-size: 20px;
 
   @media screen and (max-width: 1400px) {
     height: 9vh;
   }
+
+  @media screen and (max-width: 1024px) {
+    height: 7vh;
+    width: 15vw;
+  }
 `;
 
 export const PhoneInput = styled.input`
-  height: 7vh;
-  margin-bottom: 4vh;
+  height: 5vh;
+  margin-bottom: 2vh;
   border: none;
   border-radius: 4px;
   text-align: center;
-  font-size: 24px;
-  /* text-indent: 50px; */
+  font-size: 20px;
 
   &:focus {
     letter-spacing: 1vw;
@@ -109,6 +107,13 @@ export const PhoneInput = styled.input`
 
   @media screen and (max-width: 1400px) {
     height: 9vh;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 11vw;
+    margin-bottom: 0vh;
+    width: 66vw;
+    height: 7vh;
   }
 `;
 

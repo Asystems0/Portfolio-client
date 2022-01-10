@@ -1,12 +1,11 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-// import { GrCodeSandbox } from "react-icons/gr";
-
 import {
   FaBars,
   FaCss3,
   FaGithub,
+  FaHome,
   FaHtml5,
   FaLinkedin,
   FaNodeJs,
@@ -36,8 +35,13 @@ import {
   RightText,
   FindMeIcons,
   SocialIconLink,
+  PhoneContainer,
+  PhoneFormWrap,
+  PhoneVideo,
+  PhoneForm,
 } from "./ContactElements";
 import FormContact from "./Form";
+import { Link } from "react-router-dom";
 
 const Contact = ({ toggle }) => {
   return (
@@ -46,14 +50,16 @@ const Contact = ({ toggle }) => {
         <Nav>
           <Logo to="/">AsaFullStack</Logo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <Link to="/">
+              <FaHome style={{ color: "#000" }} />
+            </Link>
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks>
                 <HashLink
                   to="/#services"
-                  style={{ color: "#000", textDecoration: "none" }}
+                  style={{ color: "#fff", textDecoration: "none" }}
                 >
                   Services
                 </HashLink>
@@ -63,7 +69,7 @@ const Contact = ({ toggle }) => {
               <NavLinks>
                 <HashLink
                   to="/#projects"
-                  style={{ color: "#000", textDecoration: "none" }}
+                  style={{ color: "#fff", textDecoration: "none" }}
                 >
                   Projects
                 </HashLink>
@@ -73,7 +79,7 @@ const Contact = ({ toggle }) => {
               <NavLinks>
                 <HashLink
                   to="/#about"
-                  style={{ color: "#000", textDecoration: "none" }}
+                  style={{ color: "#fff", textDecoration: "none" }}
                 >
                   About
                 </HashLink>
@@ -93,6 +99,16 @@ const Contact = ({ toggle }) => {
             </FormAndVideoDiv>
           </FormWrap>
         </Container>
+        <PhoneContainer>
+          <PhoneFormWrap>
+            <PhoneVideo>
+              <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+            </PhoneVideo>
+            <PhoneForm>
+              <FormContact />
+            </PhoneForm>
+          </PhoneFormWrap>
+        </PhoneContainer>
         <Footer>
           <LanguageIcons>
             <FaHtml5 style={{ color: "#DD9866" }} />

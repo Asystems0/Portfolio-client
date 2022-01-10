@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 760px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+
+  @media screen and (max-width: 1400px) {
+    height: 470px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 700px;
+  }
 
   @media screen and (max-width: 768px) {
     height: 1300px;
@@ -24,7 +32,6 @@ export const ServicesWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -71,7 +78,7 @@ export const ServicesCard = styled.div`
 
 export const ServicesdIcon = styled.img`
   height: 160px;
-  width: 160px;
+  width: 250px;
   margin-bottom: 10px;
 
   @media screen and (max-width: 1024px) {

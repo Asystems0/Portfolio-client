@@ -11,7 +11,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Contact toggle={toggle} />
     </>
   );

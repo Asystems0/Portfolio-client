@@ -19,6 +19,10 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 1400px) {
+    height: 680px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -78,10 +82,23 @@ export const Heading = styled.h1`
   }
 `;
 
+export const HrLine = styled.hr`
+  color: #87cefa;
+  width: 5vw;
+  height: 1vh;
+  border-radius: 5px;
+  background: #87cefa;
+  margin-bottom: 2vh;
+
+  @media screen and (max-width: 480px) {
+    width: 20vw;
+  }
+`;
+
 export const Subtitle = styled.p`
   white-space: pre-line;
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};

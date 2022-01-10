@@ -7,6 +7,7 @@ import {
   RegisterMessage,
   FormLabel,
   FormInput,
+  FormTextArea,
   AreaAndPhoneDiv,
   AreaPhoneNumber,
   PhoneInput,
@@ -19,13 +20,14 @@ const FormContact = () => {
     email: "",
     areaNumber: "02",
     phone: "",
+    message: "",
   });
 
   const [registerMsg, setRegisterMsg] = useState(false);
   const [messageColor, setMessageColor] = useState("");
   const [userMessage, setUserMessage] = useState("");
 
-  const { name, email, areaNumber, phone } = formData;
+  const { name, email, areaNumber, phone, message } = formData;
 
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -133,7 +135,6 @@ const FormContact = () => {
             <option value="055">055</option>
             <option value="056">056</option>
             <option value="058">058</option>
-            <option value="059">059</option>
           </AreaPhoneNumber>
 
           <PhoneInput
@@ -147,6 +148,22 @@ const FormContact = () => {
             required
           />
         </AreaAndPhoneDiv>
+
+        <FormLabel htmlFor="for">Your message:</FormLabel>
+        <FormTextArea
+          type="text"
+          placeholder="Message"
+          name="message"
+          rows={1}
+          cols={80}
+          min={6}
+          max={128}
+          value={message}
+          onChange={(e) => onChange(e)}
+          // required
+        >
+          {" "}
+        </FormTextArea>
         <FormButton type="submit" value="Join Us" />
       </Form>
     </>

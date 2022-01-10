@@ -24,9 +24,9 @@ export const Logo = styled(Link)`
   font-size: 32px;
   width: 13%;
 
-  /* &:hover {
+  &:hover {
     color: #30475e;
-  } */
+  }
 
   @media screen and (max-width: 480px) {
     margin-left: 16px;
@@ -74,25 +74,24 @@ export const NavItem = styled.div`
 `;
 
 export const NavLinks = styled.p`
-  color: #000;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
   padding: 0.35vw;
   text-decoration: none;
-  border: 2px solid #000;
+  border: 2px solid #30475e;
   border-radius: 20px;
-  background: transparent;
+  background: #30475e;
 
   &:hover {
-    border: 2px solid #fff;
+    border: 2px solid #000;
     background: #000;
-    color: #fff;
+    font-size: 1.1em;
   }
 `;
 
 export const Container = styled.div`
-  /* min-height: 692px; */
-  height: 90vh;
+  height: 89vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -104,15 +103,8 @@ export const Container = styled.div`
   @media screen and (max-width: 1400px) {
     height: 87.5vh;
   }
-
-  @media screen and (max-width: 768px) {
-    max-width: 100vw;
-    height: 120vh;
-  }
-
-  @media screen and (max-width: 480px) {
-    max-width: 100vw;
-    height: 130vh;
+  @media screen and (max-width: 1024px) {
+    display: none;
   }
 `;
 
@@ -121,25 +113,12 @@ export const FormWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    height: 70%;
-  }
-
-  @media screen and (max-width: 400px) {
-    height: 80%;
-  }
 `;
 
 export const FormAndVideoDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-
-  @media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: "col2 col1";
-  }
 `;
 
 export const FormComponents = styled.div`
@@ -147,32 +126,11 @@ export const FormComponents = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media screen and (max-width: 480px) {
-    padding: 10px;
-  }
 `;
 
 export const HeroBg = styled.div`
   position: relative;
   right: 4vw;
-  @media screen and (max-width: 1024px) {
-    position: absolute;
-    height: 70vh;
-    max-width: 100vw;
-    right: 0;
-    transform: translate(-5%, -5%);
-  }
-  @media screen and (max-width: 768px) {
-    transform: translate(-5%, -5%);
-  }
-  @media screen and (max-width: 480px) {
-    transform: translate(-5%, -10%);
-  }
-
-  @media screen and (max-width: 375px) {
-    transform: translate(-5%, -20%);
-  }
 `;
 
 export const VideoBg = styled.video`
@@ -185,35 +143,11 @@ export const VideoBg = styled.video`
   @media screen and (max-width: 1024px) {
     width: 90vw;
   }
-
-  /* 
-  @media screen and (max-width: 1024px) {
-    width: 90vw;
-    height: 36vh;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 30vh;
-  }
-
-  @media screen and (max-width: 480px) {
-    width: 90vw;
-    height: 28vh;
-  }
-
-  @media screen and (max-width: 375px) {
-    width: 90vw;
-    height: 24vh;
-  }
-  @media screen and (max-width: 360px) {
-    width: 90vw;
-    height: 28vh;
-  } */
 `;
 
 export const Footer = styled.footer`
   background: #fff;
-  height: 5vh;
+  height: 6vh;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -274,7 +208,25 @@ export const SocialIconLink = styled.a`
   margin-left: 1vw;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.09);
     transition: all 0.2s ease-in-out;
   }
 `;
+
+export const PhoneContainer = styled.div`
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: contents;
+    background: #c9ccd5;
+  }
+`;
+
+export const PhoneFormWrap = styled.div`
+  margin-top: 20px;
+`;
+export const PhoneVideo = styled.div`
+  text-align: center;
+  margin-bottom: 2vh;
+`;
+export const PhoneForm = styled.div``;

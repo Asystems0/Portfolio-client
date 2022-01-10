@@ -8,6 +8,7 @@ import {
   TextWrapper,
   TopLine,
   Heading,
+  HrLine,
   Subtitle,
   BtnWrap,
   Column2,
@@ -41,7 +42,9 @@ const InfoSection = ({
                 <TopLine>{topline}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                <HrLine />
+
+                {/* <BtnWrap>
                   <Button
                     to="/contact"
                     smooth="true"
@@ -55,7 +58,7 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>

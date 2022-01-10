@@ -26,6 +26,10 @@ export const ProjectsWrapper = styled.div`
   @media screen and (max-width: 480px) {
     height: 170vh;
   }
+
+  @media screen and (max-width: 360px) {
+    height: 200vh;
+  }
 `;
 
 export const ProjectsRow = styled.div`

@@ -1,4 +1,7 @@
 import React from "react";
+
+import { HashLink } from "react-router-hash-link";
+
 import {
   SidebarContainer,
   CloseIcon,
@@ -19,13 +22,28 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>
-            About
+            <HashLink
+              to="/#about"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              About
+            </HashLink>
           </SidebarLink>
           <SidebarLink to="projects" onClick={toggle}>
-            Projects
+            <HashLink
+              to="/#projects"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              Projects
+            </HashLink>
           </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
-            Services
+            <HashLink
+              to="/#services"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              Services
+            </HashLink>
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>

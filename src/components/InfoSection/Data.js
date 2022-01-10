@@ -11,7 +11,7 @@ export const homeObjOne = {
   \nAll the knowledge I have accumulated aroused my curiosity and made me want getting into this world.
 
   my decision focusing on Full Stuck was based on the will to see the complete picture of the web world, end to end.`,
-  buttonLabel: "Learn More",
+  // buttonLabel: "Learn More",
   imgStart: false,
   img: require("../../images/undraw_Profile_re_4a55.png"),
   alt: "Programming",
