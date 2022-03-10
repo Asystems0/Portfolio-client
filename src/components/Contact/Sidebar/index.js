@@ -48,7 +48,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to="/contact" onClick={toggle}>
-            Contact Us
+            Be in touch
           </SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>

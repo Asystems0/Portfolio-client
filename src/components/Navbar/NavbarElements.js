@@ -104,6 +104,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
+  font-family: "Pushster", cursive;
   border-radius: 50px;
   background: #87cefa;
   white-space: nowrap;
@@ -118,6 +119,8 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+    padding: 7px 22px;
     background: #fff;
     color: #010606;
   }
