@@ -104,7 +104,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  font-family: "Pushster", cursive;
+  /* font-family: "Pushster", cursive; */
   border-radius: 50px;
   background: #87cefa;
   white-space: nowrap;
