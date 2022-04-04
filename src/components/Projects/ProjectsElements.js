@@ -179,9 +179,32 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 300px;
+  width: 400px;
   height: 200px;
+
   margin: 10px 0 10px 0;
+  image-resolution: revert;
+  padding-right: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 240px;
+    height: 160px;
+    margin: 5px 0 5px 0;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.01s ease-in-out;
+  }
+`;
+
+export const Img2 = styled.img`
+  height: 200px;
+
+  margin: 10px 0 10px 0;
+  image-resolution: revert;
   padding-right: 0;
   border-radius: 5px;
   cursor: pointer;

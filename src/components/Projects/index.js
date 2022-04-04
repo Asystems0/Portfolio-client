@@ -20,6 +20,7 @@ import {
   Subtitle,
   ImgWrap,
   Img,
+  Img2,
 } from "./ProjectsElements.js";
 
 const Projects = () => {
@@ -42,7 +43,7 @@ const Projects = () => {
               </Row1>
               <Row2>
                 <ImgWrap>
-                  <a href="https://shops4u.netlify.app/">
+                  <a target="_blank" href="https://shops4u.netlify.app/">
                     <Img src={shops} alt="Shops" />
                   </a>
                 </ImgWrap>
@@ -65,7 +66,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     href="https://bloglog.netlify.app/"
                   >
-                    <Img src={blog} alt="blog" />
+                    <Img2 src={blog} alt="blog" />
                   </a>
                 </ImgWrap>
               </Row2>
