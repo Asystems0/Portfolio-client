@@ -2,7 +2,7 @@ import React from "react";
 
 import blog from "../../images/bloglog.PNG";
 import devConnector from "../../images/devconnector.PNG";
-import portfoilo from "../../images/portfolio.PNG";
+import shops from "../../images/shops4u.PNG";
 
 import {
   ProjectsContainer,
@@ -33,16 +33,17 @@ const Projects = () => {
             </TextWrapper>
             <Column1>
               <Row1>
-                <Heading>Portfoilo</Heading>
+                <Heading>Shops4U</Heading>
                 <Subtitle>
-                  On this site I tell about myself. {"\n"} Programming languages
-                  I learned, services I give and projects I built.
+                  Meet Shops4u, a new online store that offers a variety of
+                  collections from our home designers. It is impossible to leave
+                  empty-handed in our shop.
                 </Subtitle>
               </Row1>
               <Row2>
                 <ImgWrap>
-                  <a href="/">
-                    <Img src={portfoilo} alt="portfoilo" />
+                  <a href="https://shops4u.netlify.app/">
+                    <Img src={shops} alt="Shops" />
                   </a>
                 </ImgWrap>
               </Row2>
